@@ -1,0 +1,112 @@
+.button {
+  padding: 22px 0;
+  width: 100%;
+  border: 1px solid $color-red;
+  background-color: $color-red;
+  margin: 30px 0 0;
+
+  font-family: Raleway, sans-serif;
+  color: $bg-color;
+  font-size: 16px;
+  font-weight: 600;
+
+  grid-column: 1 / -1;
+
+  @include on-tablet {
+    grid-column: span 3;
+  }
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $button-active;
+  }
+}
+
+.button-header {
+  margin: 40px 0;
+
+  @include on-tablet {
+    grid-column: 1 / span 3;
+  }
+}
+
+.additional {
+  background-color: $bg-color;
+  color: $color-red;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 0;
+  gap: 11px;
+
+  grid-column: 1 / -1;
+
+  @include on-tablet {
+    grid-row: 1;
+    grid-column: 5 / -1;
+    place-self: center end;
+  }
+
+  @include on-desktop {
+    grid-column: 10 / -1;
+  }
+
+  &:hover {
+    background-color: $bg-color;
+    color: $button-hover;
+    border-color: $button-hover;
+  }
+
+  &:active {
+    background-color: $bg-color;
+    color: $button-active;
+    border-color: $button-active;
+  }
+}
+
+.begin {
+  margin: 40px 0 0;
+
+  @include on-tablet {
+   grid-column: 1 / 4;
+  }
+
+  @include on-desktop {
+   grid-column: 6 / 9;
+  }
+}
+
+.buy-tickets {
+  grid-column: 1 / -1;
+
+  @include on-tablet {
+    grid-column: span 3;
+    grid-row: 3;
+  }
+}
+
+.buy-tickets-2 {
+   @include on-desktop {
+    grid-column: 7 / span 3;
+  }
+}
+
+.register {
+  padding: 22px 72px;
+
+  @include on-tablet {
+    grid-column: 4 / span 3;
+  }
+
+  @include on-desktop {
+    grid-column: 5 / span 3;
+  }
+}
+
+.sign-up {
+  @include on-tablet {
+    width: 300px;
+  }
+}

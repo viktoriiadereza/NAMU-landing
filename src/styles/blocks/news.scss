@@ -1,0 +1,35 @@
+.news {
+  @include page-grid;
+
+  &__list {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: span 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 6;
+    }
+  }
+}
+
+.list {
+
+  &__date {
+    color: $section-title-color;
+  }
+}
+
+.photo-cat {
+  margin-top: 50px;
+
+  @include on-tablet {
+     margin-top: 0;
+  }
+
+  @include on-desktop {
+    height: 420px;
+    object-position: top;
+  }
+}

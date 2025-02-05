@@ -1,0 +1,56 @@
+.museum-visit {
+  box-sizing: border-box;
+  background-color: $bg-header;
+  padding: 50px 20px;
+  margin-top: 90px;
+
+  @include page-grid;
+
+  grid-column: 1 / -1;
+
+  @include on-tablet {
+    padding: 80px 39px;
+  }
+
+  @include on-desktop {
+    padding: 205px 0;
+    height: 100vh;
+
+    background-image: url(../images/visit.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    object-fit: contain;
+    object-position: left;
+    grid-column: span 5;
+  }
+
+  &__content {
+    @include on-tablet {
+      grid-column: span 4;
+    }
+
+    @include on-desktop {
+      grid-column: 6 / 12;
+    }
+  }
+}
+
+.content {
+
+  &__description {
+    color: $bg-color;
+    padding: 20px 0 10px;
+  }
+}
+
+.begin {
+  margin: 40px 0 0;
+
+  @include on-tablet {
+   grid-column: 1 / 4;
+  }
+
+  @include on-desktop {
+   grid-column: 6 / 9;
+  }
+}
