@@ -5,6 +5,7 @@ A visually captivating one-page website for NAMU, showcasing art exhibitions and
 The NAMU Landing Page is designed to highlight the art exhibitions and events held at the National Art Museum of Ukraine. With a focus on responsive design, the website provides an engaging and seamless user experience across devices.
 
 [View DEMO LINK](https://viktoriiadereza.github.io/NAMU-landing/)
+
 [View Design on Figma](https://www.figma.com/file/HL3XGt5ZatvJoYBhOaWY5x/museum-prototype?node-id=323%3A1957)
 
 ## Features
